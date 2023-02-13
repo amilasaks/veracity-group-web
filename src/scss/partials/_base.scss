@@ -1,0 +1,48 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: $font-family;
+}
+
+body{
+    font-family: $font-family;
+    font-size: 16px;
+    background-color: #F4F5F1;
+    color: $font-color;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.col-2-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}   
+
+
+
+a{
+    text-decoration: none;
+    color: $font-color;
+}
+
+.btn{
+    display: block;
+    border-radius: 4px;
+    padding: 15px 30px;
+    &.primary-cta{
+        background-color: $brand-primary;
+        color: #fff;
+    }
+
+}
+.btn-wrapper{
+    display: flex;
+    gap: 10px;
+}
